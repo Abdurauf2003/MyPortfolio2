@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: linear-gradient(45deg, #208020, #aaccaa);
+    width: 100%;
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItems {
+    font-size: 25px;
+    margin: 15px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #fff;
+    background: green;
+    transition: 0.5s;
+}
+
+.navItems:hover {
+    border-radius: 50%;
+    border: 1px solid black;
+    color: black;
+    background: lime;
+    transition: 0.5s;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    border-left: 5px white solid;
+    border-right: 5px white solid;
+    color: white;
+    user-select: none;
+    transition: 1s;
+}
+
+.text:hover {
+    font-weight: bold;
+    color: black;
+    border-radius: 25px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    transform: rotateZ(360deg);
+    background: rgba(255,255,255,0.25);
+    transition: 1s;
+} 
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    width: 100%;
+    background: #090;
+}
+
+.imgBar {
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    border-left: 5px white solid;
+    border-right: 5px white solid;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#active {
+    border: 1px black solid;
+    color: black;
+    border-radius: 50%;
+    background: lime;
+}
+
+.imgBar:hover {
+    border-radius: 25px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    background: rgba(0,0,0,0.25);
+    transform: rotateZ(-360deg);
+    transition: 1s;
+}
+
+img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        height: max-content;
+        background: #090;
+    }
+    .text, .imgBar {
+        width: 80%;
+        height: max-content;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        border: none;
+        border-top: 5px white solid;
+        border-bottom: 5px white solid;
+    }
+    .text:hover, .imgBar:hover {
+        border: none;
+        border-top: 5px black solid;
+        border-bottom: 5px black solid;
+        border-radius: 25px;
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 20% 20% 50% 10%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background: #090;
+    height: 111vh;
+    border-left: 5px white solid;
+    border-right: 5px white solid;
+}
+textarea, input {
+    width: 100%;
+    outline: none;
+    font-size: 1.5em;
+    padding: 15px;
+    background: transparent;
+    color: white;
+    border: 2.5px white solid;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+textarea:focus, input:focus {
+    background: white;
+    color: black;
+    border: 2.5px black solid;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.5em;
+    border: 2.5px white solid;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bold;
+    transition: 1s;
+}
+.sendBtn:hover {
+    font-size: 2em;
+    background: white;
+    border: 2.5px black solid;
+    color: black;
+    transition: 1s;
+}
